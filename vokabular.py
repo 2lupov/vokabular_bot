@@ -6,7 +6,7 @@ TOKEN = '7456144617:AAG7w0k2Dy6sZgPpUpqkmYZ50iRy8NTJ-4E'
 
 def start(update, context):
     # Создание кнопки с Web App
-    web_app = WebAppInfo(url="https://your-domain.com/mini-app")  # Укажите URL вашего мини-приложения
+    web_app = WebAppInfo(url="https://2lupov.github.io/vokabular_bot/")  # Укажите URL вашего мини-приложения
     button = InlineKeyboardButton(text="Изучать слова", web_app=web_app)
     
     keyboard = [[button]]
