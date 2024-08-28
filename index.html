@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .word {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Изучение слов</h2>
+    <div class="word">Как переводится слово "apple"?</div>
+    <input type="text" id="answer" placeholder="Ваш ответ">
+    <button class="button" onclick="submitAnswer()">Отправить</button>
+
+    <script>
+        function submitAnswer() {
+            const answer = document.getElementById('answer').value;
+            if (answer.toLowerCase() === 'яблоко') {
+                alert('Правильно!');
+            } else {
+                alert('Неправильно. Попробуйте снова!');
+            }
+        }
+    </script>
+</body>
+</html>
